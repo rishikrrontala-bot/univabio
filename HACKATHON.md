@@ -1,9 +1,9 @@
 # UnivaBio ($40,000 in prizes)
 
 **Event page:** https://univabio.devpost.com/  ·  **Rules:** https://univabio.devpost.com/rules
-**Deadline:** **Tue Oct 6, 2026 · 11:45 PM EDT**  (`2026-10-06T23:45:00-04:00`)
+**Deadline:** **Tue Oct 6, 2026 · 11:45 PM EDT**  (`2026-10-06T23:45:00-04:00`); ✔ confirmed: organizer source `DEADLINE_ISO = "2026-10-07T03:45:00Z"`
 
-*Facts read from the live Devpost page on 2026-09-23. ⚠ = unconfirmed, so verify before relying on it.*
+*Facts read from the live Devpost page on 2026-09-23. Re-verified 2026-09-23 23:05 EDT against the organizer's public site source (`github.com/univadev/univadev.com`, `src/app/univabio/page.tsx`) and the WebSearch index of univabio.devpost.com; devpost.com itself is blocked from the build VM. See `research/RESEARCH-BRIEF.md` §1. ⚠ = unconfirmed, so verify before relying on it.*
 
 ## Eligibility
 Ages 13+, students only; companies excluded.
@@ -16,6 +16,7 @@ Ages 13+, students only; companies excluded.
 - Best No-code AI App (Momen)
 
 ## Prizes
+*Organizer source: "$35K+ in prizes: cash-value placements for the top three, a $2,000 special prize for the best no-code AI app". ⚠ A competitor's copy of the Devpost page lists cash of 1st $3,890 / 2nd $1,355 / 3rd $1,100, plus Momen $2,000 cash + $2,000 credits.*
 - 1st: Momen $2,000, CodeCrafters 2 yr, InterviewBuddy, Protoflow, Adaption Labs credits
 - 2nd / 3rd: CodeCrafters, InterviewBuddy, Protoflow, Adaption Labs credits
 - Best No-code AI App (Momen): $2,000 Momen credits
@@ -29,22 +30,26 @@ Ages 13+, students only; companies excluded.
 
 ## Judging criteria
 
-| Criterion | Weight |
-|---|---|
-| Idea & Innovation | unpublished (treat as equal unless the rules say otherwise) |
-| Implementation | unpublished (treat as equal unless the rules say otherwise) |
-| Health Impact & Rigor | unpublished (treat as equal unless the rules say otherwise) |
-| Design & Usability | unpublished (treat as equal unless the rules say otherwise) |
-| Presentation | unpublished (treat as equal unless the rules say otherwise) |
+✔ Confirmed in the organizer FAQ: "Judges score five things: idea and innovation, implementation, health impact and rigor, design and usability, and presentation." **No weights are published anywhere**, so they are treated as equal.
+
+| Criterion | Weight | What it asks (index / Devpost copy) |
+|---|---|---|
+| Idea & Innovation | unpublished (equal) | Real problem within the theme? Innovative? Meaningfully different from what exists? |
+| Implementation | unpublished (equal) | Does the solution work? Goals achieved? Technical challenge. |
+| Health Impact & Rigor | unpublished (equal) | Who is it for, would it actually help them, potential. |
+| Design & Usability | unpublished (equal) | Thought put into UX; interface quality. |
+| Presentation | unpublished (equal) | Problem clearly defined; **demo shows it actually working**; **honest about finished vs planned**. |
+
+**Judges** (organizer source): Sudheer Pratap (Lead Software Engineer), Aditya Shrivastava (Software Engineer, Barclays). ⚠ Others reportedly from Barclays, Fidelity, SAP Labs, AWS, Qen Labs, Altera Digital Health. **The panel is software engineers**, and the FAQ says "Be prepared to walk judges through your own code."
 
 ## Event-specific deliverables (on top of CLAUDE.md's Definition of done)
 - `submission/one-pager.pdf`: **exactly one page**, rendered from HTML with headless Chrome
 - Clinical grounding with citations (peer-reviewed papers, clinical guidelines) and a validation section with honest metrics
 - Clear “not a diagnosis” boundaries in the UI and in LIMITATIONS
-- `submission/video/demo.mp4`: 2:00–3:00
+- `submission/video/demo.mp4`: 2:00–3:00 (UnivaBio states no length; the same organizer's Raven Hacks required 2–3 min)
 
 ## Strategy notes (starting hypotheses, which the research may overturn)
-- This organizer appears to belong to the Univa Dev / PropNote network (which also runs VentureFix, FinBilim, Raven Hacks and EurekaDev). That network has published Innovation 25 / Real-World Impact 25 / Technical 20 / Presentation 10 / Design 10 / Feasibility 10 and asks for a 2–3 min video plus a public repo. Verify against this event's rules.
+- This organizer appears to belong to the Univa Dev / PropNote network (which also runs VentureFix, FinBilim, Raven Hacks and EurekaDev). That network has published Innovation 25 / Real-World Impact 25 / Technical 20 / Presentation 10 / Design 10 / Feasibility 10 and asks for a 2–3 min video plus a public repo. ✔ Verified: those are Raven Hacks VTL's weights (organizer source). UnivaBio publishes the five criteria above **without** weights.
 - “Rigor” is scored explicitly: use real public datasets and honest validation metrics.
 
 **Suggested lane:** Person-facing early detection or living-with-illness, private on-device. Must not overlap DSH Hacks V2, Baseline (concussion) or LARMOR (MRI).

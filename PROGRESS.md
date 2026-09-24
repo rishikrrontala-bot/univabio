@@ -7,6 +7,8 @@
 | Phase start (ET) | Hours left | Phase |
 |---|---|---|
 | Wed Sep 23 2026 22:40 EDT | 313.1 | 0 · Setup + plan |
+| Wed Sep 23 2026 22:52 EDT | 312.9 | 1 · Research |
+| Wed Sep 23 2026 23:12 EDT | 312.5 | 2 · Concept picked |
 
 ## Phase plan (budgeted backwards, hackathon-win Phase 4 table)
 Working window = 313 h − 24 h reserve = ~289 h. This run is a single unattended cloud session, so the plan is
@@ -14,9 +16,9 @@ Working window = 313 h − 24 h reserve = ~289 h. This run is a single unattende
 
 | # | Phase | Share | Latest finish (ET) | Status |
 |---|---|---|---|---|
-| 0 | Setup, PROGRESS.md, tool check | — | Sep 24 | in progress |
-| 1 | Research: verify event facts, 5–8 winner briefs, RESEARCH-BRIEF | ~5% | Sep 25 | todo |
-| 2 | Concepts: 3 scored, pick, CONCEPT.md pushed | ~2% | Sep 25 | todo |
+| 0 | Setup, PROGRESS.md, tool check | — | Sep 24 | ✅ done |
+| 1 | Research: verify event facts, 5–8 winner briefs, RESEARCH-BRIEF | ~5% | Sep 25 | ✅ done |
+| 2 | Concepts: 3 scored, pick, CONCEPT.md pushed | ~2% | Sep 25 | ✅ done: **Hark** (night-cough counter) |
 | 3 | Design direction: PRODUCT.md + DESIGN.md | ~3% | Sep 26 | todo |
 | 4 | Core build (wow moment → demo path → rest), tests, CI, deploy | ~50% | Oct 1 | todo |
 | 5 | Quality passes (critique → audit → polish), live headless pass | incl. above | Oct 2 | todo |
@@ -41,3 +43,12 @@ Working window = 313 h − 24 h reserve = ~289 h. This run is a single unattende
   - **Competitor lanes already crowded:** medication AI, lab-report explainers, triage chat, care navigation.
   - **User instruction (Sep 23 22:5x):** save (commit + push) everything by 11:20 PM ET, and keep saving often in case credits run low.
   - **RESUME HERE:** write RESEARCH-BRIEF.md, then CONCEPTS.md. Leading concept is an on-device night cough monitor, validated on public Coswara + ESC-50 data from GitHub. Alternatives: a digits-in-noise hearing screen, and a digital Mini-Cog clock drawing test.
+- **Phase 1–2 done** (Sep 23 23:14 EDT, ~312.5 h left):
+  - `research/RESEARCH-BRIEF.md` is written, and HACKATHON.md now carries the verified facts (✔ marks).
+  - `research/CONCEPTS.md` scores three concepts: A Hark 4.60/4.65, B Quiet Test 3.60/3.50, C Ten Past Eleven 3.80/3.75. **Picked A.**
+  - `CONCEPT.md` is pushed.
+- **RESUME HERE → Phase 3 (design direction)** + **ML data pipeline**:
+  - `ml/`: download a Coswara subset (per-date `tar.gz.*` parts from github.com/iiscleap/Coswara-Data, ~13 GB total, so only take a subset) and ESC-50 (github.com/karolpiczak/ESC-50).
+  - Train a log-mel CNN (PyTorch CPU), export weights for the TS inference, and write parity test vectors.
+  - Get the YAMNet baseline via storage.googleapis.com/mediapipe-models/audio_classifier/yamnet.
+  - Then run the impeccable shape step to write PRODUCT.md + DESIGN.md (fallback skills in /tmp/skills; re-clone if the VM was recycled).
