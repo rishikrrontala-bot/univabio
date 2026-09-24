@@ -3,7 +3,7 @@
 **Event page:** https://univabio.devpost.com/  ·  **Rules:** https://univabio.devpost.com/rules
 **Deadline:** **Tue Oct 6, 2026 · 11:45 PM EDT**  (`2026-10-06T23:45:00-04:00`); ✔ confirmed: organizer source `DEADLINE_ISO = "2026-10-07T03:45:00Z"`
 
-*Facts read from the live Devpost page on 2026-09-23. Re-verified 2026-09-23 23:05 EDT against the organizer's public site source (`github.com/univadev/univadev.com`, `src/app/univabio/page.tsx`) and the WebSearch index of univabio.devpost.com; devpost.com itself is blocked from the build VM. See `research/RESEARCH-BRIEF.md` §1. ⚠ = unconfirmed, so verify before relying on it.*
+*Facts read from the live Devpost page on 2026-09-23. Re-verified 2026-09-23 22:58 EDT against the organizer's public site source (`github.com/univadev/univadev.com`, `src/app/univabio/page.tsx`) and the WebSearch index of univabio.devpost.com; devpost.com itself is blocked from the build VM. See `research/RESEARCH-BRIEF.md` §1. ⚠ = unconfirmed, so verify before relying on it.*
 
 ## Eligibility
 Ages 13+, students only; companies excluded.

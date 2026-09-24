@@ -1,6 +1,6 @@
 # CONCEPT: Hark
 
-**Event:** UnivaBio 2026 ("AI for Human Health") · **Lane:** person-facing, private, on-device; *live with it* + *detect earlier* · **Claimed:** Wed Sep 23 2026, 23:12 EDT
+**Event:** UnivaBio 2026 ("AI for Human Health") · **Lane:** person-facing, private, on-device; *live with it* + *detect earlier* · **Claimed:** Wed Sep 23 2026, 23:00 EDT
 
 **One line:** *A private night-cough counter.* Leave your phone on the nightstand; Hark counts every cough on-device, never records or uploads a sound, and gives you a morning report your doctor can read.
 

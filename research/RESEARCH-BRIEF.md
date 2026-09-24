@@ -1,6 +1,6 @@
 # Research brief: UnivaBio 2026
 
-*Compiled Sep 23 2026, 23:00–23:10 EDT, about 313 h before the deadline.*
+*Compiled Sep 23 2026, 22:50–23:00 EDT, about 313 h before the deadline.*
 
 **How this was verified.** This session's egress proxy blocks devpost.com, univadev.com, YouTube, PubMed and web.archive.org, so no Devpost page was loaded directly. Facts come from three places:
 - the organizer's own public website source, `github.com/univadev/univadev.com` (cloned and read; `src/app/univabio/page.tsx` was last changed 2026-09-08);

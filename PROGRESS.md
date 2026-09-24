@@ -8,7 +8,7 @@
 |---|---|---|
 | Wed Sep 23 2026 22:40 EDT | 313.1 | 0 · Setup + plan |
 | Wed Sep 23 2026 22:52 EDT | 312.9 | 1 · Research |
-| Wed Sep 23 2026 23:12 EDT | 312.5 | 2 · Concept picked |
+| Wed Sep 23 2026 23:00 EDT | 312.7 | 2 · Concept picked |
 
 ## Phase plan (budgeted backwards, hackathon-win Phase 4 table)
 Working window = 313 h − 24 h reserve = ~289 h. This run is a single unattended cloud session, so the plan is
@@ -43,7 +43,7 @@ Working window = 313 h − 24 h reserve = ~289 h. This run is a single unattende
   - **Competitor lanes already crowded:** medication AI, lab-report explainers, triage chat, care navigation.
   - **User instruction (Sep 23 22:5x):** save (commit + push) everything by 11:20 PM ET, and keep saving often in case credits run low.
   - **RESUME HERE:** write RESEARCH-BRIEF.md, then CONCEPTS.md. Leading concept is an on-device night cough monitor, validated on public Coswara + ESC-50 data from GitHub. Alternatives: a digits-in-noise hearing screen, and a digital Mini-Cog clock drawing test.
-- **Phase 1–2 done** (Sep 23 23:14 EDT, ~312.5 h left):
+- **Phase 1–2 done** (Sep 23 23:00 EDT, ~312.7 h left):
   - `research/RESEARCH-BRIEF.md` is written, and HACKATHON.md now carries the verified facts (✔ marks).
   - `research/CONCEPTS.md` scores three concepts: A Hark 4.60/4.65, B Quiet Test 3.60/3.50, C Ten Past Eleven 3.80/3.75. **Picked A.**
   - `CONCEPT.md` is pushed.
@@ -52,3 +52,12 @@ Working window = 313 h − 24 h reserve = ~289 h. This run is a single unattende
   - Train a log-mel CNN (PyTorch CPU), export weights for the TS inference, and write parity test vectors.
   - Get the YAMNet baseline via storage.googleapis.com/mediapipe-models/audio_classifier/yamnet.
   - Then run the impeccable shape step to write PRODUCT.md + DESIGN.md (fallback skills in /tmp/skills; re-clone if the VM was recycled).
+- **Paused by user request** (Sep 23 ~23:06 EDT, ~312.6 h left): Rishik asked to push everything and stop.
+  - **State at pause:**
+    - Phase 3 (design direction) had just started. `impeccable context` ran and reported no PRODUCT.md, so init → new-work is required. Rishik said he is unavailable, so PRODUCT.md is inferred from the brief, with assumptions labelled.
+    - The ML data pipeline was running outside the repo (`/home/user/data`, not committed): Coswara subset extraction (13 date folders, ~1,436 participants, resampled to 16 kHz), an ESC-50 clone, and `pip install torch==2.5.1 soundfile librosa scikit-learn onnx`.
+  - **RESUME HERE:**
+    1. Re-clone the fallback skills (`/tmp/skills`, see CLAUDE.md), re-install ffmpeg (`pip install imageio-ffmpeg` + symlink) and the Python deps.
+    2. Re-fetch the data: clone Coswara with `git clone --filter=blob:none --no-checkout --depth 1 https://github.com/iiscleap/Coswara-Data.git` into `/tmp/intel/iiscleap_Coswara-Data`. Don't run `git ls-tree -l` on it (that pulls all 13 GB), and budget ~4 GB for the subset. Then run `ml/data/extract_coswara.sh` and clone ESC-50 into `/home/user/data/ESC-50`.
+    3. Write PRODUCT.md (impeccable `reference/init.md` template), run `impeccable concept-seed --scope direction --mode operate`, and write DESIGN.md at finish.
+    4. Build `ml/` (training + validation + YAMNet baseline), then the Vite app.

@@ -1,6 +1,6 @@
 # Concepts: three scored, one picked
 
-*Sep 23 2026, 23:10 EDT, about 312.6 h left. The rubric is from `research/RESEARCH-BRIEF.md` §4. Scores run 1–5.*
+*Sep 23 2026, 23:00 EDT, about 312.7 h left. The rubric is from `research/RESEARCH-BRIEF.md` §4. Scores run 1–5.*
 
 **Constraints every concept must satisfy**
 - Person-facing: detect earlier, or live with it.
